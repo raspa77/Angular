@@ -3,7 +3,8 @@ import { template } from '@angular/core/src/render3';
 
 @Component({
     selector : 'app-players',
-    template: '<h2>Players</h2>'
+    templateUrl: './players.component.html',
+    styleUrls: ['./players.component.css']
 })
 export class PlayersComponent {
 }

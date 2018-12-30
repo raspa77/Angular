@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-h1 {
-    color: cadetblue;
-    font-family: 'Raleway', sans-serif;
-    font-weight: lighter;
-}
-h2 {
+h1, h2, table {
     color: cadetblue;
     font-family: 'Raleway', sans-serif;
     font-weight: lighter;
