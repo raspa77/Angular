@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { template } from '@angular/core/src/render3';
+import { PlayerService } from './player.service';
+import { PlayerService2 } from './player.service2';
 
 @Component({
     selector : 'app-players',
@@ -8,21 +10,12 @@ import { template } from '@angular/core/src/render3';
 })
 export class PlayersComponent {
     title = 'Players';
-    players = [
-        {
-            name: 'Master',
-            pg: 'Master',
-            lev: 99
-        },
-        {
-            name: 'Raspa',
-            pg: 'Snatk',
-            lev: 13
-        },
-        {
-            name: 'Ciappy',
-            pg: 'Cornovald',
-            lev: 15
-        }
-    ];
+    players = [];
+    constructor(service: PlayerService) {
+        this.players = service.getPlayers();
+    }
+ // constructor() {
+ //    const service = new PlayerService2();
+ //    this.players = service.getPlayers2();
+ // }
 }
