@@ -1,0 +1,13 @@
+<h2>{{title}}</h2>
+<table>
+    <tr>
+        <th>Nome</th>
+        <th>PG</th>
+        <th>Lev</th>
+    </tr>
+    <tr *ngFor="let player of players">
+        <td>{{player.name}}</td>
+        <td>{{player.pg}}</td>
+        <td>{{player.lev}}</td>
+    </tr>
+</table>
